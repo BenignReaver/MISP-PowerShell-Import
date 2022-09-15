@@ -42,7 +42,7 @@ $certCallback = @"
 }
  
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
-[ServerCertificateValidationCallback]::Ignore
+[ServerCertificateValidationCallback]::Ignore()
 #endregion SSL Ignore
  
 #region Domain
